@@ -88,6 +88,10 @@ h2 {
     padding: 10px 0;  
     
 }
+.boton:hover {
+    background-color: var(--color-tortilla);
+    
+}
 
 footer {
     text-align: center;
@@ -107,4 +111,11 @@ footer {
     .mapa iframe {
         height: 200px;
     }
+    
+    .boton {
+        width: 95%;
+    }
+    
+    
 }
+
