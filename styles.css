@@ -1,20 +1,31 @@
+:root {
+    --color-rojo: #e31e25; /*color rojo don dany*/
+    --color-amarillo: #fdd302; /*color amarillo don dany*/
+    --color-oscuro: #231f20; /*color oscuro don dany*/
+    --color-verde: #a9b638; /*color secundario verde*/
+    --color-tortilla: #e6dfcc; /*color beige*/
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--color-tortilla);
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: var(--color-oscuro);
     color: white;
 }
 
 header .logo {
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 main {
@@ -23,7 +34,13 @@ main {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: var(--color-oscuro);
+}
+
+h2 {
+    text-align: center;
+    color: var(--color-oscuro);
+    
 }
 
 .sucursal {
@@ -43,16 +60,39 @@ h1 {
 
 .info {
     margin-top: 15px;
+    font-size: 1.2em;    
+    color: var(--color-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0; 
+}
+
+.info a {
+    text-decoration: none;
+ 
+    
 }
 
 .info p {
     margin: 5px 0;
+    color: var(--color-oscuro);
+}
+
+.boton {
+    border-radius: 5px;
+    background-color: var(--color-amarillo);
+    width: 25%;
+    text-align: center;
+    padding: 10px 0;  
+    
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: var(--color-oscuro);
     color: white;
     position: relative;
     bottom: 0;
@@ -61,7 +101,7 @@ footer {
 
 @media (max-width: 600px) {
     header .logo {
-        max-width: 100px;
+        max-width: 150px;
     }
 
     .mapa iframe {
